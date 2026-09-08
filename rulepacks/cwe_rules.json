@@ -1,0 +1,52 @@
+{
+  "python_eval_rce": {
+    "pattern": "\\beval\\s*\\(",
+    "severity": "critical",
+    "languages": ["python"],
+    "cwe": "CWE-78",
+    "cvss": 9.8,
+    "owasp": "A03: Injection",
+    "description": "Use of eval() results in remote code execution.",
+    "remediation": "Use ast.literal_eval() or avoid dynamic execution."
+  },
+  "python_exec_rce": {
+    "pattern": "\\bexec\\s*\\(",
+    "severity": "critical",
+    "languages": ["python"],
+    "cwe": "CWE-78",
+    "cvss": 9.8,
+    "owasp": "A03: Injection",
+    "description": "exec() can lead to arbitrary code execution.",
+    "remediation": "Avoid exec(), use subprocess with safe args."
+  },
+  "js_eval_rce": {
+    "pattern": "eval\\(",
+    "severity": "critical",
+    "languages": ["javascript","typescript"],
+    "cwe": "CWE-95",
+    "cvss": 9.8,
+    "owasp": "A03: Injection",
+    "description": "JavaScript eval() allows execution of untrusted code.",
+    "remediation": "Use JSON.parse or other safe alternatives."
+  },
+  "js_dom_xss": {
+    "pattern": "innerHTML",
+    "severity": "high",
+    "languages": ["javascript","typescript"],
+    "cwe": "CWE-79",
+    "cvss": 6.1,
+    "owasp": "A03: Injection",
+    "description": "innerHTML assignment may cause DOM XSS.",
+    "remediation": "Use textContent or DOMPurify."
+  },
+  "php_eval_rce": {
+    "pattern": "eval\\s*\\(",
+    "severity": "critical",
+    "languages": ["php"],
+    "cwe": "CWE-95",
+    "cvss": 9.8,
+    "owasp": "A03: Injection",
+    "description": "PHP eval() allows remote code execution.",
+    "remediation": "Avoid eval(); use safe templating engines."
+  }
+}

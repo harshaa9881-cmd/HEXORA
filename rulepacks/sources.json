@@ -1,0 +1,9 @@
+{
+  "python": ["input", "request.GET", "request.POST", "sys.argv"],
+  "javascript": ["location.href", "document.cookie", "window.name"],
+  "php": ["$_GET", "$_POST", "$_REQUEST", "$_COOKIE"],
+  "java": ["request.getParameter"],
+  "go": ["os.Args"],
+  "csharp": ["Request.QueryString"],
+  "shell": ["$1", "$2", "$@"] 
+}

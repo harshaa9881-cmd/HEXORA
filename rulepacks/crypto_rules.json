@@ -1,0 +1,22 @@
+{
+  "weak_md5": {
+    "pattern": "md5",
+    "severity": "medium",
+    "languages": ["python","php","javascript","java","ruby","go","csharp"],
+    "cwe": "CWE-327",
+    "cvss": 5.3,
+    "owasp": "A02: Cryptographic Failures",
+    "description": "MD5 is cryptographically broken.",
+    "remediation": "Use SHA-256, bcrypt, or Argon2."
+  },
+  "weak_sha1": {
+    "pattern": "sha1",
+    "severity": "medium",
+    "languages": ["python","php","javascript","java","ruby","go","csharp"],
+    "cwe": "CWE-327",
+    "cvss": 5.3,
+    "owasp": "A02: Cryptographic Failures",
+    "description": "SHA-1 is insecure.",
+    "remediation": "Use SHA-256 or stronger."
+  }
+}

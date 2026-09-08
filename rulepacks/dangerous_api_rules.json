@@ -1,0 +1,5 @@
+{
+  "python": ["pickle.load", "yaml.load"],
+  "javascript": ["Function"],
+  "php": ["create_function"]
+}

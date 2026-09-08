@@ -1,0 +1,14 @@
+{
+  "CWE-78": {
+    "bad": "os.system(\"rm -rf \" + user_input)",
+    "good": "subprocess.run([\"rm\", \"-rf\", user_input])"
+  },
+  "CWE-79": {
+    "bad": "element.innerHTML = user_input",
+    "good": "element.textContent = user_input"
+  },
+  "CWE-95": {
+    "bad": "eval(user_input)",
+    "good": "json.loads(user_input)"
+  }
+}

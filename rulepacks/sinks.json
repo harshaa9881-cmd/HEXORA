@@ -1,0 +1,9 @@
+{
+  "python": ["eval", "exec", "os.system", "subprocess.Popen"],
+  "javascript": ["innerHTML", "eval", "Function"],
+  "php": ["eval", "shell_exec", "system", "exec"],
+  "java": ["Runtime.getRuntime().exec"],
+  "go": ["exec.Command"],
+  "csharp": ["Process.Start"],
+  "shell": ["rm", "cp", "mv"]
+}

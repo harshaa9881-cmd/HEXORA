@@ -1,0 +1,14 @@
+{
+  "CWE-78": {
+    "explanation": "OS Command Injection occurs when untrusted input reaches system-level commands.",
+    "fix": "Use parameterized commands, avoid shell=True, sanitize input with shlex.quote."
+  },
+  "CWE-95": {
+    "explanation": "Eval injection happens when dynamic code execution is allowed.",
+    "fix": "Avoid eval(), use safe parsing functions, validate input."
+  },
+  "CWE-79": {
+    "explanation": "Cross-site scripting happens when user-controlled HTML or JS is served unescaped.",
+    "fix": "Use proper HTML escaping, Content Security Policy, avoid innerHTML."
+  }
+}

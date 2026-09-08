@@ -1,0 +1,9 @@
+{
+  "python": ["shlex.quote", "html.escape"],
+  "javascript": ["DOMPurify.sanitize"],
+  "php": ["htmlspecialchars", "escapeshellarg"],
+  "java": [],
+  "go": [],
+  "csharp": [],
+  "shell": []
+}
